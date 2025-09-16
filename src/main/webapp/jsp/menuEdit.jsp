@@ -1,6 +1,7 @@
 <%@ page import="com.orderservice.service.CategoryManager" %>
 <%@ page import="com.orderservice.model.Category" %>
 <%@ page import="java.util.List" %>
+<%@ page import="java.lang.*" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%
@@ -41,7 +42,7 @@
 								<option value = "<%=category.getCid()%>"
 								<%
 									if(category.getCid() == ccid){
-										out.println("selected");
+//										out.println("selected");
 									}
 								%>
 								>

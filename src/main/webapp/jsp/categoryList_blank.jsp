@@ -1,4 +1,5 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ page import="java.lang.*" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%
 	String errMsg = (String)session.getAttribute("errMsg");
@@ -54,7 +55,7 @@
 	<input type = "button" value = "返回主菜单" onclick="window.location.href='/showMenus'">
 	<%
 		if(errMsg != null && !errMsg.equalsIgnoreCase("")){
-			out.println("<div id='sponsorAdDiv'><br><font color=red>" + errMsg + "</font></div>");
+//			out.println("<div id='sponsorAdDiv'><br><font color=red>" + errMsg + "</font></div>");
 	%>
 	<%
 		}

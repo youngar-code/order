@@ -1,9 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page import="java.lang.*" %>
 <%
     String _currentMenu = (String) request.getAttribute("leftMenu");
     String _currentMenuOpen = (String) request.getAttribute("leftMenuOpen");
-    System.out.println("_currentMenu = " + _currentMenu);
-    System.out.println("_currentMenuOpen = " + _currentMenuOpen);
+//    System.out.println("_currentMenu = " + _currentMenu);
+//    System.out.println("_currentMenuOpen = " + _currentMenuOpen);
 %>
 <script type="text/javascript">
     try{ace.settings.check('sidebar' , 'fixed')}catch(e){}

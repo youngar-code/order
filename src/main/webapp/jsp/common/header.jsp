@@ -1,4 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page import="java.lang.*" %>
 <%--head banner--%>
 <script type="text/javascript">
     try{ace.settings.check('navbar' , 'fixed')}catch(e){}

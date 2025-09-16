@@ -1,12 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-
+<%@ page import="java.lang.*" %>
 <html>
 <head>
 	<title>添加菜品分类</title>
 	<style>
-		input.none {border:1}
-		select.none {border:1}
+		input.none {border:1px}
+		select.none {border:1px}
 	</style>
 </head>
 

@@ -1,6 +1,7 @@
 ﻿<%@ page import="com.orderservice.service.CategoryManager" %>
 <%@ page import="com.orderservice.model.Category" %>
 <%@ page import="java.util.List" %>
+<%@ page import="java.lang.*" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%
@@ -16,10 +17,10 @@
 	for (int i = 0; cookies != null && i < cookies.length; i++) {
 		if ("ckUseCookie".equals(cookies[i].getName())) {
 			ckUseCookie = cookies[i];
-			System.out.println("ckUseCookie 的值为" + ckUseCookie.getName() + " = " + ckUseCookie.getValue());
+//			System.out.println("ckUseCookie 的值为" + ckUseCookie.getName() + " = " + ckUseCookie.getValue());
 		} else if ("ckCid".equals(cookies[i].getName())) {
 			ckCid = cookies[i];
-			System.out.println("ckCid 的值是" + ckCid.getName() + " = " + ckCid.getValue());
+//			System.out.println("ckCid 的值是" + ckCid.getName() + " = " + ckCid.getValue());
 		}
 	}
 
@@ -97,7 +98,9 @@
 									<b>查询：</b>
 									<select name="cid" class="tree-folder-name">
 										<option value="all"
-												<% if(currentCid == null){ out.println("selected"); }%>
+												<% if(currentCid == null){
+//													out.println("selected");
+												}%>
 										>全部</option>
 										<%
 											List<Category> categories = categoryManager.getAllCategories();
@@ -106,7 +109,7 @@
 										<option value="<%=category.getCid()%>"
 												<%
 													if(currentCid != null && currentCid.equalsIgnoreCase(new Integer(category.getCid()).toString())){
-														out.println("selected");
+//														out.println("selected");
 													}
 												%>
 										>
